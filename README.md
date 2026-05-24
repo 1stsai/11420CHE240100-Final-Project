@@ -2,6 +2,7 @@
 
 ## Requirements
 - Pygame (install with ```pip install pygame```)
+- random
 
 ## Execution
 To run the game, please run:
@@ -12,8 +13,12 @@ An entry screen would be shown, and please choose a playing mode to continue.
 
 ## Mass testing (debugging)
 For mass testing without GUI, please run the following command with options:
+- ```--debug``` activates the debug mode, refer to the following options.
+- ```--games``` should be followed by the number of games, default is 10
+- ```-p1``` and ```--p2``` should be followed by the agent name, there are four types of agent to choose from: minimax was a minimax agent built by Gemini, rule1 mimics the moves by 侯佩伶, and rule2 mimics the move by 蔡依憓. Finally, the reflex agent is a baseline agent that always use up all the rolls and chooses the category of highest score (based on the Greedy algorithm)
+Your command line propt should be of form:
 ```
-python run.py --debug --games [number of games] --p1 [minimax, rule, reflex] --p2 [minimax, rule, reflex]
+python run.py --debug --games [number of games] --p1 [agent] --p2 [agent]
 ```
 
 ## Result
@@ -26,3 +31,5 @@ We ran a 100 gamge experiment with minimax and reflex agents, the results are as
  P1 Avg Score: 204.1 | P2 Avg Score: 138.2
 ==================================================
 ```
+- ```minimax``` agent scores on average 200 to 210 points
+- ```rule2``` scores on average 190 to 200 points
