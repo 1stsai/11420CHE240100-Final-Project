@@ -22,7 +22,7 @@ python run.py --debug --games [number of games] --p1 [agent] --p2 [agent]
 ```
 
 ## Result
-We ran a 100 gamge experiment with minimax and reflex agents, the results are as follows:
+We ran a 100 game experiment with minimax and reflex agents, the results are as follows:
 ```
 ==================================================
  FINAL STATS
@@ -31,5 +31,7 @@ We ran a 100 gamge experiment with minimax and reflex agents, the results are as
  P1 Avg Score: 204.1 | P2 Avg Score: 138.2
 ==================================================
 ```
-- ```minimax``` agent scores on average 200 to 210 points
-- ```rule2``` scores on average 190 to 200 points
+- ```minimax``` agent scores on average 204.2 points
+- ```rule1``` agent scores on average 165.1
+- ```rule2``` agent scores on average 191.4 points
+- ```reflex``` agent scores on average 138.0 points
